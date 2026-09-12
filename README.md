@@ -26,6 +26,12 @@ npx skills@latest add AbyssFerry/onward-skills --list
 
 查看已安装技能可用 `npx skills list`，更新使用 `npx skills update`。安装由 [Vercel 的 skills CLI](https://github.com/vercel-labs/skills) 完成。
 
+### 已安装原版技能：可选切换（仅 Codex）
+
+可让 Codex 阅读并执行 [切换到 Onward](extras/codex/use-onward.md) 或 [切回原版](extras/codex/use-originals.md)。只切换文档名单中两侧都已安装的对应组；切回时恢复原版之前的开关。名单外一律保持原样，包括合并冲突等未收录的 Matt 技能和 Onward 的独有入口。
+
+这两份普通 Markdown 放在 `extras/codex/`，不随技能安装，也不会自动执行。切换使用 Codex 用户配置，影响同一配置下的其他项目，修改后需要重启 Codex。
+
 ## 开始使用
 
 第一次接入项目：
