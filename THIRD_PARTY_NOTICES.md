@@ -30,7 +30,7 @@ Onward Skills 包含自建内容和经调整的第三方技能。Onward 新增�
 方法结构、图解类型、示例与指导保留。实际差异是：
 
 1. 技能名改为 `show-me-onward`。
-2. 沿用纳入本包前已有的 Windows 适配：打开 HTML 的 `Bash(open …)` 改为 `PowerShell(Start-Process …)`。
+2. 将打开 HTML 的固定 `Bash(open …)` 命令改为使用当前环境可用的工具，保留 HTML 文件命名示例；不限定操作系统。
 3. 新增 Codex 调用配置，设为仅手动调用。
 
 ## Onward 自建内容

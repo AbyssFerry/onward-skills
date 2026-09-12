@@ -4,6 +4,8 @@
 
 Onward 面向采用自身项目约定的仓库。它以 Matt Pocock 的技能为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。共 **14 个技能：6 个核心技能、8 个支撑技能**。
 
+当前版本：[v0.1.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.1.0)。
+
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
 ## 安装
@@ -72,6 +74,8 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `show-me-onward` | 用图解或聚焦网页帮助理解当前话题 |
 
 上述自动调用策略通过各技能的 Codex 配置表达；其他工具是否采用同一策略，以其技能机制为准。
+
+目前安装与分发验收在 Windows + Codex 环境完成。`show-me-onward` 使用当前环境可用的工具打开网页；macOS、Linux 及其他 Agent 尚未进行整套行为验证。
 
 ## 项目文档
 
