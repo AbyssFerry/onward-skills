@@ -98,7 +98,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `spec/conventions.md` | 文档归属与项目工作规则 |
 | `spec/api.md` | 对外接口的请求、响应、错误及示例 |
 | 模块内 `spec/` | `design.md` 记录内部设计，`interface.md` 记录调用入口与约束并引用详细契约，适用时用 `api.md` 保存对外 API 契约和示例；模块形成后就近维护 |
-| `spec/<change-name>.md` | 一次变更的目标、设计、验收与状态 |
+| `spec/<change-name>-spec.md` | 一次变更的目标、设计、验收与状态 |
 | `spec/plans/<feature-slug>/` | 实施任务及依赖，每项任务一份文件 |
 | `.onward/future/` | 以后再讨论或实施的事项，简单清单或独立主题文档 |
 | `.onward/research/` | 调查问题、来源、发现与限制 |
