@@ -11,7 +11,7 @@ Inspect existing documentation before changing files. If the project already has
 
 Create or supplement `spec/conventions.md`, titled “项目约定” (Project conventions), with two sections: “Onward 约定” (Onward conventions) for the adopted documentation locations, their brief purposes, and maintenance rules; “项目自身约定” (Project-specific conventions) for established directory, coding, build, and test practices. Keep it a concise rules document, pointing to authoritative configuration for details. Record the chosen layout, including retained locations. Product and architecture content belongs in its own specs; initialization explanations belong in the conversation or a report.
 
-Use these default document responsibilities. Create files and directories as substantive content emerges, rather than filling out an empty template set.
+Use these default document responsibilities. Add project-specific spec files or subdirectories as needed, recording their purposes in conventions. Create files and directories as substantive content emerges, rather than filling out an empty template set.
 
 | Location | What belongs here |
 |---|---|
@@ -20,7 +20,7 @@ Use these default document responsibilities. Create files and directories as sub
 | `spec/conventions.md` | The working rules described above: where documents belong and how this project maintains, builds, and tests its work. |
 | `spec/api.md` | External API contracts: requests, responses, errors, and usage examples, when the project exposes an API. |
 | A module's local `spec/` | `design.md` describes internal structure, behavior, dependencies, and design decisions; `interface.md` describes callers' entry points and usage constraints, linking to detailed contracts; `api.md` holds external API contracts and examples when applicable. Co-locate these documents once the module structure exists; during design, a module can start with a single spec. |
-| `spec/<change-name>-spec.md` | The goals, scope, design, and acceptance criteria for a specific change. Use a descriptive change name and a status of draft, confirmed, or completed. |
+| `spec/<change-name>-spec.md` | A change specification, usually written with `to-spec-onward`, recording goals, scope, design, and acceptance criteria. Use a descriptive change name and a status of draft, confirmed, or completed. |
 | `spec/plans/<feature-slug>/<NN>-<slug>.md` | One implementation ticket: delivery, spec references, blockers, status, and acceptance criteria for work being planned for execution. |
 | `.onward/future/` | Matters to discuss or do later: open questions, deferred designs, future features, and technical improvements. Keep simple items in one document; expand a topic into its own file when useful. |
 | `.onward/research/` | Investigations: questions, sources, findings, and limitations that inform decisions. |

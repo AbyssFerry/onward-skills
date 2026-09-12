@@ -89,7 +89,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 `init-onward` 在使用项目中建立 `spec/conventions.md`。“Onward 约定”简述文档位置、用途与维护规则；“项目自身约定”记录已有工程规范，细节引用项目配置。依赖这些约定的技能在文件缺失时会提示先初始化。
 
-默认文档各有职责，随实际内容按需创建，具体约定由使用项目维护：
+默认文档各有职责，随实际内容按需创建。项目可以在 `spec/` 中增加有独立用途的文件或子目录，并将用途记入 conventions；具体约定由使用项目维护：
 
 | 位置 | 用途 |
 |---|---|
@@ -98,7 +98,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `spec/conventions.md` | 文档归属与项目工作规则 |
 | `spec/api.md` | 对外接口的请求、响应、错误及示例 |
 | 模块内 `spec/` | `design.md` 记录内部设计，`interface.md` 记录调用入口与约束并引用详细契约，适用时用 `api.md` 保存对外 API 契约和示例；模块形成后就近维护 |
-| `spec/<change-name>-spec.md` | 一次变更的目标、设计、验收与状态 |
+| `spec/<change-name>-spec.md` | 通常由 `to-spec-onward` 生成，记录一次变更的目标、设计、验收与状态 |
 | `spec/plans/<feature-slug>/` | 实施任务及依赖，每项任务一份文件 |
 | `.onward/future/` | 以后再讨论或实施的事项，简单清单或独立主题文档 |
 | `.onward/research/` | 调查问题、来源、发现与限制 |
