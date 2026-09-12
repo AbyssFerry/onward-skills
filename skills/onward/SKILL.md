@@ -26,6 +26,6 @@ Use these roles when a skill would help, not as a required sequence:
 | `grilling-onward` | Work through unresolved goals or design decisions in the current scope. |
 | `to-spec-onward` | Capture agreed decisions in the appropriate specs. |
 | `tidy-onward` | Organize and consolidate project documentation. |
-| `plan-onward` | Create or update a local ticket-based implementation plan for substantial work. |
+| `to-plan-onward` | Create or update a local ticket-based implementation plan for substantial work. |
 | `implement-onward` | Implement the specified spec or the current unblocked unfinished ticket of a plan. |
 | `diagnosing-bugs-onward` | Diagnose and fix a hard bug or performance regression. |

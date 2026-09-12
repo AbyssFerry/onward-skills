@@ -26,7 +26,7 @@ enabled = false
 |---|---|
 | grill-me、grilling | grilling-onward |
 | to-spec | to-spec-onward |
-| to-tickets | plan-onward |
+| to-tickets | to-plan-onward |
 | implement | implement-onward |
 | code-review | code-review-onward |
 | research | research-onward |

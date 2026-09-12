@@ -1,9 +1,9 @@
 ---
-name: plan-onward
+name: to-plan-onward
 description: Create or update a local implementation plan as tracer-bullet tickets, one file per ticket with blocking dependencies.
 ---
 
-# Plan Onward
+# To Plan Onward
 
 Break a plan, spec, or conversation into a set of **tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
