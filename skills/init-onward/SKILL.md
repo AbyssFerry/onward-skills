@@ -19,7 +19,7 @@ Use these default document responsibilities. Create files and directories as sub
 | `spec/architecture.md` | System and module boundaries, responsibilities, interactions and data flow, and key technical decisions and tradeoffs. |
 | `spec/conventions.md` | The working rules described above: where documents belong and how this project maintains, builds, and tests its work. |
 | `spec/api.md` | External API contracts: requests, responses, errors, and usage examples, when the project exposes an API. |
-| A module's local `spec/` | That module's responsibilities, interfaces, behavior, constraints, and dependencies. Co-locate it once the module structure exists; during design, a module can start with a single spec. |
+| A module's local `spec/` | `design.md` describes internal structure, behavior, dependencies, and design decisions; `interface.md` describes callers' entry points and usage constraints, linking to detailed contracts; `api.md` holds external API contracts and examples when applicable. Co-locate these documents once the module structure exists; during design, a module can start with a single spec. |
 | `spec/<change-name>.md` | The goals, scope, design, and acceptance criteria for a specific change. Use a descriptive filename and a status of draft, confirmed, or completed. |
 | `spec/plans/<feature-slug>/<NN>-<slug>.md` | One implementation ticket: delivery, spec references, blockers, status, and acceptance criteria for work being planned for execution. |
 | `.onward/future/` | Matters to discuss or do later: open questions, deferred designs, future features, and technical improvements. Keep simple items in one document; expand a topic into its own file when useful. |
