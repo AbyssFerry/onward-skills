@@ -7,6 +7,8 @@ description: Establish project documentation and conventions when setting up a p
 
 Give the project a small, usable foundation for future design and implementation. Ground it in the conversation, existing documentation, and repository practices. Ask about unresolved choices only when they affect this setup.
 
+Inspect existing documentation before changing files. If the project already has a documentation layout, present two concrete setup options: retain it or migrate to the defaults below, explaining the affected files and destinations. Wait for the user's choice before editing; follow an already confirmed choice without asking again. If there is no existing layout, proceed with the defaults.
+
 Create or supplement `spec/conventions.md`, titled “项目约定” (Project conventions), as the home for project-specific directory, documentation, coding, build, and test conventions. Record established practices and agreed choices; point to authoritative configuration where it already supplies the details. Leave future design decisions for later discussion.
 
 Use these default documentation conventions:
@@ -19,6 +21,6 @@ Use these default documentation conventions:
 
 Give `AGENTS.md` a brief pointer telling agents to consult `spec/conventions.md` before implementation or creating, updating, or moving project documents and process artifacts (research, visualizations, reports). Preserve all existing rules and append only a missing pointer; create the file if absent. Never delete or overwrite the existing file. Keep the detailed conventions in one place.
 
-Keep this setup limited to the additions needed for a usable foundation. Preserve existing Markdown files, their contents, and their locations; do not delete, replace, or broadly rewrite them. When setup reveals obstacles or opportunities for migration or consolidation, recommend follow-up work instead of performing it. Save actionable findings and suggestions in `.onward/reports/` when a handoff document would help; a report is not required for every initialization. Code scaffolding and feature implementation belong to later work.
+Keep this setup limited to the agreed documentation work. Preserve existing Markdown content; move documents only under the approved migration option, carrying it out as part of this initialization and updating affected references and conventions. Save actionable findings and suggestions in `.onward/reports/` when a handoff document would help; a report is not required for every initialization. Code scaffolding and feature implementation belong to later work.
 
 Finish when the conventions reflect the available project facts and agreed setup choices, and the `AGENTS.md` pointer resolves. Briefly report what was established.
