@@ -32,11 +32,11 @@ Example (adapt to the project's actual files and substantive content):
 
 Identify untitled passages by recognizable content. Flag conflicting definitions for agreement.
 
-Append a concise Onward conventions section to `AGENTS.md`, matching its existing heading hierarchy; create the file if absent. If the section already exists, update it without duplicating it. Preserve existing rules and surrounding content; never delete or overwrite the existing file. Record the agreed documentation locations, their brief purposes, and maintenance rules, including retained or customized locations and defaults for documents not yet needed. Product and architecture content belongs in its own specs; initialization explanations belong in the conversation or a report.
+Append a concise Onward conventions section to `AGENTS.md`, matching its existing heading hierarchy; create the file if absent. If the section already exists, update it without duplicating it. Preserve existing rules and surrounding content; never delete or overwrite the existing file. Keep this section limited to stable Onward conventions: the document responsibilities below, their agreed locations (including retained or customized locations), reading entry points, and maintenance rules. Include defaults for documents not yet needed. Project-specific document maps, extra directories, and temporary locations belong in the project's documentation entry point or index. Keep project versions, stages, progress, and implementation or verification results in the relevant specs, plans, or reports. Product and architecture content belongs in its own specs; initialization explanations belong in the conversation or a report.
 
 Keep established directory, coding, build, and test practices in `spec/conventions.md`, titled “项目约定” (Project conventions), or their existing authoritative documents. Supplement them only where needed, pointing to authoritative configuration for details.
 
-Use these default document responsibilities. Add project-specific spec files or subdirectories as needed, recording their purposes in the Onward section. Create files and directories as substantive content emerges, rather than filling out an empty template set.
+Use these default document responsibilities. Add project-specific spec files or subdirectories as needed, recording their locations and purposes in the project's documentation entry point or index. Create files and directories as substantive content emerges, rather than filling out an empty template set.
 
 | Location | What belongs here |
 |---|---|
@@ -57,8 +57,8 @@ Use these default document responsibilities. Add project-specific spec files or 
 
 Long-lived specs describe the current design and carry no status. Archive a change spec only after implementation, verification, and synchronization of the long-lived specs are complete. Follow the project's choice about tracking `.onward/` in Git. Add no automatic logs.
 
-In the Onward section, tell agents to follow the recorded layout and maintenance rules when implementing or creating, updating, or moving project documents and process artifacts (research, visualizations, reports), and point to applicable project engineering conventions to consult before implementation and verification. Explain when to consult the glossary and related ADRs for domain language and design decisions.
+In the Onward section, tell agents to follow the recorded layout and maintenance rules when implementing or creating, updating, or moving project documents and process artifacts (research, visualizations, reports), and point to applicable project engineering conventions to consult before implementation and verification. Point to the project's documentation entry point or index for the current document map. Explain when to consult the glossary and related ADRs for domain language and design decisions.
 
 Keep this setup limited to the agreed documentation work. Preserve existing Markdown content; move documents only under the approved migration option, carrying it out as part of this initialization and updating affected references and conventions. Save actionable findings and suggestions in `.onward/reports/` when a handoff document would help; a report is not required for every initialization. Code scaffolding and feature implementation belong to later work.
 
-Finish when the Onward section reflects the available project facts and agreed setup choices, and its references resolve or clearly identify documents to create when needed. Briefly report what was established.
+Finish when the Onward section records the agreed, stable Onward conventions, project-specific documents are discoverable through that entry point or index, and references resolve or clearly identify documents to create when needed. The Onward section should remain valid as project stages and extra directories change. Briefly report what was established.
