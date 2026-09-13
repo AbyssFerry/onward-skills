@@ -7,7 +7,7 @@ description: Diagnosis loop for hard bugs and performance regressions. Use when 
 
 A discipline for hard bugs. Skip phases only when explicitly justified.
 
-Read and follow `spec/conventions.md`. If it is missing, tell the user to run `init-onward` first and stop without making changes.
+Read and follow the Onward conventions in `AGENTS.md`. If they are missing, tell the user to run `init-onward` first and stop without making changes.
 
 When exploring the codebase, read `CONTEXT.md` (if it exists) to get a clear mental model of the relevant modules, and check ADRs in the area you're touching.
 

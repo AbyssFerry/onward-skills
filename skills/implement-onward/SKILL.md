@@ -3,7 +3,7 @@ name: implement-onward
 description: "Implement a spec or the current unblocked unfinished ticket of a local plan, including verification and documentation closeout."
 ---
 
-Read and follow `spec/conventions.md`. If it is missing, tell the user to run `init-onward` first and stop without making changes.
+Read and follow the Onward conventions in `AGENTS.md`. If they are missing, tell the user to run `init-onward` first and stop without making changes.
 
 Implement the work described by the user in the spec. For a plan, identify the current unblocked unfinished ticket from actual progress and dependencies, and implement only that ticket.
 

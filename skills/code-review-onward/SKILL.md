@@ -37,7 +37,7 @@ For plan work, assess the selected ticket against its referenced specs, using th
 
 ### 3. Identify the standards sources
 
-Read `spec/conventions.md` and anything else in the repo that documents how code should be written, such as `CODING_STANDARDS.md` or `CONTRIBUTING.md`.
+Read the Onward conventions in `AGENTS.md` and the project engineering rules they reference, plus anything else in the repo that documents how code should be written, such as `spec/conventions.md`, `CODING_STANDARDS.md`, or `CONTRIBUTING.md`, where present.
 
 On top of whatever the repo documents, the Standards axis always carries the **smell baseline** below: a fixed set of Fowler code smells (_Refactoring_, ch.3) that applies even when a repo documents nothing. Two rules bind it:
 

@@ -5,7 +5,7 @@ description: Tidy documentation in Onward projects by reorganizing files, consol
 
 # Tidy Onward
 
-Make project documentation clear, consistent, and easy to find. Read and follow `spec/conventions.md` before making changes. If it is missing, tell the user to run `init-onward` first and stop without editing documents.
+Make project documentation clear, consistent, and easy to find. Read and follow the Onward conventions in `AGENTS.md` before making changes. If they are missing, tell the user to run `init-onward` first and stop without editing documents.
 
 Reorganize and consolidate documents using settled decisions and repository evidence, preserving meaningful details. Correct outdated descriptions when the evidence is clear; surface unresolved design conflicts for the user.
 

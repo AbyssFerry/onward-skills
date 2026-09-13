@@ -5,7 +5,7 @@ description: "Turn the current conversation into a spec and save it as local Mar
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 
-Read `spec/conventions.md` before writing. If it is missing, tell the user to run `init-onward` first and stop without editing documents.
+Read the Onward conventions in `AGENTS.md` before writing. If they are missing, tell the user to run `init-onward` first and stop without editing documents.
 
 ## Process
 
@@ -15,7 +15,7 @@ Read `spec/conventions.md` before writing. If it is missing, tell the user to ru
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below, then save it as local Markdown in the appropriate project or module spec documents. Follow `spec/conventions.md` for document placement and lifecycle; use project `spec/` by default.
+3. Write the spec using the template below, then save it as local Markdown in the appropriate project or module spec documents. Follow the Onward conventions for document placement and lifecycle; use project `spec/` by default.
 
 <spec-template>
 

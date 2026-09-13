@@ -7,7 +7,7 @@ description: Create or update a local implementation plan as tracer-bullet ticke
 
 Break a plan, spec, or conversation into a set of **tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-Read and follow `spec/conventions.md`. If it is missing, tell the user to run `init-onward` first and stop without editing documents.
+Read and follow the Onward conventions in `AGENTS.md`. If they are missing, tell the user to run `init-onward` first and stop without editing documents.
 
 ## Process
 

@@ -7,13 +7,13 @@ description: Find the next useful step, resume the current conversation, or sugg
 
 Help the user move forward from where they are. Use their current goal, the conversation, settled decisions, and open questions to identify the next useful step.
 
-When guiding project work, check whether `spec/conventions.md` exists; if missing, recommend `init-onward` first.
+When guiding project work, check whether `AGENTS.md` contains Onward conventions; if missing, recommend `init-onward` first.
 
 When further discussion would help, pick up the existing thread and follow the approach of any skill already in use. Incorporate the user's explanation and ask the next useful question. Resolving one question does not necessarily complete the discussion.
 
 Otherwise, briefly explain the next concrete action and why. Name a relevant skill when helpful; leave starting another stage to the user.
 
-Rely on the conversation when it is sufficient. Read relevant specs, plans, or `spec/conventions.md` only when missing information affects the next step. If the direction is still unclear, ask a focused question.
+Rely on the conversation when it is sufficient. Read relevant specs, plans, or project conventions only when missing information affects the next step. If the direction is still unclear, ask a focused question.
 
 Keep the response brief. Success means the current conversation has moved forward or the user knows the next concrete action.
 
