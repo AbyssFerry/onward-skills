@@ -7,16 +7,22 @@ description: Establish project documentation and conventions when setting up a p
 
 Give the project a small, usable foundation for future design and implementation. Ground it in the conversation, existing documentation, and repository practices. Ask about unresolved choices only when they affect this setup.
 
-Inspect existing documentation before changing files. If the project already has a documentation layout, recommend a migration toward the defaults below. Use a compact before/after table like the example below, listing specific current and proposed file paths and why each file stays, is created, or moves. Classify documents by their content and purpose. Show the proposed Onward section and key project-convention changes. Let the user retain the current layout wholly or partly, or choose other locations. Wait for agreement before editing; follow an already confirmed choice without asking again. If there is no existing layout, proceed with the defaults.
+Inspect existing documentation before changing files. If the project already has a documentation layout, recommend a migration toward the defaults below. Use a compact before/after table like the example below, identifying source and destination files or sections, the proposed handling, and why. Classify documents by their content and purpose. Show the proposed Onward section and key project-convention changes. Let the user retain the current layout wholly or partly, or choose other locations. Wait for agreement before editing; follow an already confirmed choice without asking again. If there is no existing layout, proceed with the defaults.
 
 Example (adapt to the project's actual files and substantive content):
 
-| Action | Current file | Recommended location | Purpose / reason |
+| Action | Current file or section | Recommended location | Purpose / reason |
 |---|---|---|---|
 | Move | `docs/product.md` | `spec/product.md` | Product scope and behavior. |
 | Keep | `CONTEXT.md` | `CONTEXT.md` | The glossary already uses the default location. |
 | Append | `AGENTS.md` | `AGENTS.md` | Add the Onward section, preserving existing rules. |
 | Create | — | `spec/conventions.md` | Record confirmed build and test practices. |
+| Merge | `docs/auth-api.md`, `docs/error-codes.md` | Authentication and Error codes sections in `spec/api.md` | Combine API contracts, retaining unique content and consolidating duplicates. |
+| Split | Product goals section in `docs/overview.md` | `spec/product.md` | Product goals and scope. |
+| Split | System design section in `docs/overview.md` | `spec/architecture.md` | System structure and module responsibilities. |
+| Keep | Usage section in `docs/overview.md` | Same file and section | Retain the remaining user guide. |
+
+Identify untitled passages by recognizable content. Flag conflicting definitions for agreement.
 
 Append a concise Onward conventions section to `AGENTS.md`, matching its existing heading hierarchy; create the file if absent. If the section already exists, update it without duplicating it. Preserve existing rules and surrounding content; never delete or overwrite the existing file. Record the agreed documentation locations, their brief purposes, and maintenance rules, including retained or customized locations and defaults for documents not yet needed. Product and architecture content belongs in its own specs; initialization explanations belong in the conversation or a report.
 
