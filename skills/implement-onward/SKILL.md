@@ -13,9 +13,9 @@ Use /tdd-onward where possible, at pre-agreed seams.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Use [tidy-onward](../tidy-onward/SKILL.md) to update and close out documentation affected by this work, including specs and actual plan progress. Synchronize documents before code review.
-
 Once done, use [code-review-onward](../code-review-onward/SKILL.md) to review the work, providing the starting Git state, work scope, and spec or selected ticket. Mark work completed or archive change specs only after review and applicable fixes are complete.
+
+Check the documentation affected by this implementation yourself, ensuring that relevant specs, task status, and verification records accurately reflect settled decisions and actual results; update omissions or outdated descriptions directly.
 
 Commit your work to the current branch.
 

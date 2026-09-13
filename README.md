@@ -114,7 +114,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 ADR 的实际位置遵循 AGENTS.md 中的 Onward 约定；例如选择保留 `docs/decisions/`，领域建模就在那里继续编号，不另建默认目录。
 
-模块设计期可以先用一份规范。`to-spec-onward` 将已确认设计写入适当的规范文档；已有内容需要拆分归位时，由 `tidy-onward` 按项目约定整理，实施后也由 `implement-onward` 调用它同步。
+模块设计期可以先用一份规范。`to-spec-onward` 将已确认设计写入适当的规范文档；已有内容需要拆分归位时，由 `tidy-onward` 按项目约定整理。`implement-onward` 收尾时自行检查并同步受影响的规范、任务状态和验证记录，不自动调用 tidy 或额外启动文档审查。
 
 ## 来源与许可
 
