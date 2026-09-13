@@ -7,7 +7,15 @@ description: Establish project documentation and conventions when setting up a p
 
 Give the project a small, usable foundation for future design and implementation. Ground it in the conversation, existing documentation, and repository practices. Ask about unresolved choices only when they affect this setup.
 
-Inspect existing documentation before changing files. If the project already has a documentation layout, recommend a migration toward the defaults below. Use a compact before/after table like the example below, identifying source and destination files or sections, the proposed handling, and why. Classify documents by their content and purpose. Show the proposed Onward section and key project-convention changes. Let the user retain the current layout wholly or partly, or choose other locations. Wait for agreement before editing; follow an already confirmed choice without asking again. If there is no existing layout, proceed with the defaults.
+Before proposing the first setup for an existing project, launch parallel, read-only exploration subagents. Start with three areas, adjusting the split to the available material:
+
+- Original documentation: read the documents in scope in full, tracing their purposes, relationships, and current or historical authority. Use indexes to find the source material.
+- Code, configuration, and tests: establish what is implemented and which directory, build, and verification practices actually exist.
+- Existing conventions: identify engineering and agent rules, their authoritative sources, and unresolved or conflicting choices.
+
+Have each subagent return findings with source references and remaining gaps. Wait for their results, resolve disagreements against the originals, and account for the content and references affected by the setup before drafting the migration and conventions. For an empty project or a later focused update, inspect the available material within that scope.
+
+If the project already has a documentation layout, recommend a migration toward the defaults below. Use a compact before/after table like the example below, identifying source and destination files or sections, the proposed handling, and why. Classify documents by their content and purpose. Show the proposed Onward section and key project-convention changes. Let the user retain the current layout wholly or partly, or choose other locations. Wait for agreement before editing; follow an already confirmed choice without asking again. If there is no existing layout, proceed with the defaults.
 
 Example (adapt to the project's actual files and substantive content):
 
