@@ -35,6 +35,6 @@ Onward Skills 包含自建内容和经调整的第三方技能。Onward 新增�
 
 ## Onward 自建内容
 
-`onward`、`init-onward` 和 `tidy-onward` 是本项目自建技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。
+`onward`、`init-onward`、`tidy-onward` 和 `discuss-onward` 是本项目原创技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。网页将这四项单独列入“原创技能”，直接展示完整指令；`discuss-onward` 只提供正文，不附使用场景或第三方差异对照。
 
 完整中文原文、使用场景和逐段差异见 [技能说明页](https://abyssferry.github.io/onward-skills/)。所有来源声明均独立于技能指令正文；第三方作者不因此被表示为本项目的维护者或背书方。

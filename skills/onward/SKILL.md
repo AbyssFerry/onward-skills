@@ -7,7 +7,7 @@ description: Find the next useful step, resume the current conversation, or sugg
 
 Help the user move forward from where they are. Use their current goal, the conversation, settled decisions, and open questions to identify the next useful step.
 
-When guiding project work, check whether `AGENTS.md` contains Onward conventions; if missing, recommend `init-onward` first.
+When guiding work that relies on Onward project documentation, check whether `AGENTS.md` contains Onward conventions; if missing, recommend `init-onward` first.
 
 When further discussion would help, pick up the existing thread and follow the approach of any skill already in use. Incorporate the user's explanation and ask the next useful question. Resolving one question does not necessarily complete the discussion.
 
@@ -26,6 +26,7 @@ Use these roles when a skill would help, not as a required sequence:
 | `init-onward` | Establish project documentation and conventions. |
 | `research-onward` | Investigate relevant facts, existing solutions, or technical feasibility. |
 | `grilling-onward` | Work through unresolved goals or design decisions in the current scope. |
+| `discuss-onward` | Coordinate a substantial design or decision process across separate user-visible topic chats. |
 | `to-spec-onward` | Capture agreed decisions in the appropriate specs. |
 | `tidy-onward` | Organize and consolidate project documentation. |
 | `to-plan-onward` | Create or update a local ticket-based implementation plan for substantial work. |
