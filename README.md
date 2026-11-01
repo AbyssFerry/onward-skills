@@ -6,7 +6,7 @@ Onward，意为「向前」。编程时，我们常在一个问题解决后停�
 
 共 **15 个技能：4 个原创技能、11 个改编技能**。工程流程面向采用 Onward 项目约定的仓库；`discuss-onward` 专供 Codex，可独立统筹品牌、产品及其他设计或决策讨论。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
 
-当前版本：[v0.2.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.2.0)。
+当前版本：[v0.2.1](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.2.1)。
 
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
@@ -53,7 +53,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 不确定接下来做什么时，调用 `$onward`。小功能可以由规范直接进入实施；计划用于需要拆分的工作，也可以更新已有计划。
 
-需要逐项展开较大的设计或决策时，可直接使用 `$discuss-onward`：当前会话统筹讨论清单与进度，每个专题在独立会话中讨论、看图和确认，再回主会话继续。
+需要逐项展开较大的设计或决策时，可直接使用 `$discuss-onward`：当前会话统筹讨论清单与进度，每个专题在独立会话中讨论、看图和确认，再回主会话继续。只在讨论到该专题时开启或继续会话，不提前批量创建或唤醒后续会话。
 
 ## 原创技能
 

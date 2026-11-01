@@ -5,7 +5,7 @@ description: Organize a series of design or decision discussions in separate Cod
 
 Use the current chat as coordinator. Break the overall work into coherent discussion topics, keeping related choices together. Maintain one Markdown document recording the topics, reference materials, agreed decisions, chat and result links, and progress.
 
-When the user wants to proceed, open a separate Codex chat for the next topic with the context it needs. The user discusses, generates images, revises, and confirms the work there.
+When the user wants to proceed, open a separate Codex chat for the next topic with the context it needs. Create or resume a topic chat only when the user reaches that topic; do not create or wake later chats in advance. The user discusses, generates images, revises, and confirms the work there.
 
 Default to **GPT-6.1 Sol / xhigh** for new chats. You may ask the user which model and reasoning effort they prefer; reuse their choice for subsequent chats.
 
