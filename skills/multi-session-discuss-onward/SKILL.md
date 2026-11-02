@@ -1,5 +1,5 @@
 ---
-name: discuss-onward
+name: multi-session-discuss-onward
 description: Organize a series of design or decision discussions in separate Codex chats.
 ---
 
