@@ -7,6 +7,8 @@ Use the current chat as coordinator for an approved plan from [to-plan-onward](.
 
 Open a new Codex chat for each task, using **GPT-6.1 Sol / medium**. Tell it to use [implement-onward](../implement-onward/SKILL.md) to complete that task. Open only the current task's chat, not the whole plan in advance.
 
-Wait for the implementation chat to report completion, then review its result in the coordinator chat. Send any needed changes back to that implementation chat. After acceptance, automatically proceed to the next task.
+Tell the implementation chat to message this coordinator when it finishes or is blocked, and include the coordinator link and the user's authorization to report back. End the coordinator's turn after dispatching; resume when notified instead of waiting or polling.
+
+When notified, review the result in the coordinator chat. Send any needed changes back to that implementation chat. After acceptance, automatically proceed to the next task.
 
 Continue until the agreed plan scope is complete. Pause and report to the user when blocked or when a user decision is needed.

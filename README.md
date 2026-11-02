@@ -6,7 +6,7 @@ Onward，意为「向前」。编程时，我们常在一个问题解决后停�
 
 共 **16 个技能：5 个原创技能、11 个改编技能**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 专供 Codex，可独立统筹品牌、产品及其他设计或决策讨论。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
 
-当前版本：[v0.3.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.3.0)。
+当前版本：[v0.3.1](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.3.1)。
 
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
@@ -65,7 +65,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `init-onward` | 首次接入已有项目时并行探索原始材料，再展示迁移方案与约定草稿，按用户调整确认后执行 |
 | `tidy-onward` | 整理、同步和归档文档，从正确性与一致性两方面审查 |
 | `multi-session-discuss-onward` | 当前会话统筹，在独立 Codex 会话中逐项讨论和确认，维护共用讨论文档 |
-| `multi-session-run-plan-onward` | 按计划逐项开启实现会话，由主会话审查后自动继续 |
+| `multi-session-run-plan-onward` | 按计划逐项开启实现会话，完成后主动通知主会话审查并继续 |
 
 `multi-session-discuss-onward` 的新会话默认使用 GPT-6.1 Sol／xhigh，用户可另选模型和思考程度。专题会话开场先说明本场讨论什么、要确定或产出什么。它没有其他技能依赖，无需项目初始化。
 
