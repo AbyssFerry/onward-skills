@@ -71,7 +71,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 `multi-session-discuss-onward` 的新会话默认使用 GPT-6.1 Sol／xhigh，用户可另选模型和思考程度。专题会话开场先说明本场讨论什么、要确定或产出什么。它没有其他技能依赖，无需项目初始化。
 
-`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口及参考资料提供完整中文译文，不附使用场景。
+`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口及参考资料提供完整中文译文。网页为全部 18 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
 
 ## 核心改编
 
