@@ -35,6 +35,8 @@ Onward Skills 包含自建内容和经调整的第三方技能。Onward 新增�
 
 ## Onward 自建内容
 
-`onward`、`init-onward`、`tidy-onward`、`multi-session-discuss-onward` 和 `multi-session-run-plan-onward` 是本项目原创技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。网页将这五项单独列入“原创技能”，直接展示完整指令；两个 multi-session 技能只提供正文，不附使用场景或第三方差异对照。
+`onward`、`init-onward`、`tidy-onward`、`multi-session-discuss-onward`、`multi-session-run-plan-onward`、`find-resources-onward` 和 `skills-refine-onward` 是本项目原创技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。网页将这七项单独列入“原创技能”，直接展示完整指令；两个 multi-session 技能、资源发现与技能精炼入口不附使用场景或第三方差异对照。
+
+资源发现与技能精炼来源于用户与 AI 的独立设计，迁入时只调整名称与自引用，保留既有方法和三个参考文件。`skills-refine-onward` 仅按名称定位用户安装的 `writing-for-agents` 与 `skill-creator`，不分发这两个外部技能的正文；资源地图中的链接也不代表复制所链接网站的内容。
 
 完整中文原文、使用场景和逐段差异见 [技能说明页](https://abyssferry.github.io/onward-skills/)。所有来源声明均独立于技能指令正文；第三方作者不因此被表示为本项目的维护者或背书方。
