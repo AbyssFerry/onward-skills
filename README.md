@@ -6,7 +6,7 @@ Onward，意为「向前」。编程时，我们常在一个问题解决后停�
 
 共 **18 个技能：7 个原创技能、11 个改编技能**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 专供 Codex，可独立统筹品牌、产品及其他设计或决策讨论；资源发现与技能精炼入口同样无需项目初始化。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
 
-当前版本：[v0.4.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.4.0)。
+当前版本：[v0.4.1](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.4.1)。
 
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
@@ -71,7 +71,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 `multi-session-discuss-onward` 的新会话默认使用 GPT-6.1 Sol／xhigh，用户可另选模型和思考程度。专题会话开场先说明本场讨论什么、要确定或产出什么。它没有其他技能依赖，无需项目初始化。
 
-`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口及参考资料提供完整中文译文。网页为全部 18 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
+`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。Exa 与 Firecrawl 按覆盖缺口、预期收益和额度或费用选用；技能集合地图按用途提供项目入口。论文发现内嵌完整 paper-lookup 指令、数据库参考与脚本，可按需使用；脚本要求 Python 3.11+，API 示例使用 curl 与网络。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口和 Onward 接入参考提供中文译文，paper-lookup 入口另有完整译文，随包上游数据库参考和脚本保留英文。网页为全部 18 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
 
 ## 核心改编
 

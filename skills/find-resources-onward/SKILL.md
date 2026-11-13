@@ -17,15 +17,23 @@ Use the [research areas](references/sources.md#choosing-research-areas) to show 
 
 Continue the conversation when the purpose or selection is unclear. Begin the corresponding research once the scope and priorities are agreed; carry forward choices that are already explicit.
 
+## Choose search tools when useful
+
+**Exa** can broaden web discovery and fetch known pages. **Firecrawl** can search, retrieve page content, and discover or collect pages within a site. Use them when they add worthwhile coverage or content, such as incomplete results or missing page text; they are optional choices, not startup steps for every search.
+
+Choose according to the task, current tool availability, and applicable quota or cost. Use existing authorized quota when the expected benefit is clear; ask the user when the value or acceptable spend is unclear. See [access methods](references/access-methods.md#exa-and-firecrawl) for tool selection and usage limits.
+
+For papers and research evidence, read [academic search](references/academic-search.md), which connects the bundled paper-lookup instructions, database references, and executable lookup scripts to this discovery task.
+
 ## Explore beyond the obvious
 
-The [source map](references/sources.md) offers directories, repositories, official material, blogs, communities, and example collections. Choose useful starting points and extend into the task's own field.
+The [source map](references/sources.md) offers directories, repositories, official material, blogs, communities, and example collections. When looking for agent skills, browse the [skill collections](references/skill-collections.md) for development, specialist, and discovery projects. Choose useful starting points and extend into the task's own field.
 
 Use the capabilities and knowledge needed to reach the user's goal as search directions.
 
 Expand the user's wording into domain terminology, synonyms, and relevant languages, including Chinese and English where useful. Direct repositories, author links, and community discussions can reveal resources missing from aggregators. Existing skills and plugins may help too, alongside external discovery.
 
-Adjust breadth and depth to the task and any request for a quick or deep search. Spend attention on the user's priorities; complementary sources matter more than list length. See [access methods](references/access-methods.md) for ways to reach them.
+Adjust breadth and depth to the task and any request for a quick or deep search. Spend attention on the user's priorities; complementary sources matter more than list length.
 
 When multiple research areas are selected and subagents are available, assign a dedicated subagent to each area. Give each the agreed purpose, priorities, and a clear research scope. Have each return useful candidates, findings supported by original material, and important gaps.
 

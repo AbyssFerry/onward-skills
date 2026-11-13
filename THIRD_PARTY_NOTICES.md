@@ -33,6 +33,12 @@ Onward Skills 包含自建内容和经调整的第三方技能。Onward 新增�
 2. 将打开 HTML 的固定 `Bash(open …)` 命令改为使用当前环境可用的工具，保留 HTML 文件命名示例；不限定操作系统。
 3. 新增 Codex 调用配置，设为仅手动调用。
 
+## K-Dense
+
+`find-resources-onward/resources/.upstream/paper-lookup/` 来自 [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills/tree/2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5/skills/paper-lookup)，采用提交 `2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5`。版权为 `Copyright (c) 2025 K-Dense Inc.`，采用 [MIT 许可](skills/find-resources-onward/resources/.upstream/paper-lookup/LICENSE.md)。
+
+完整保留上游入口、18 份数据库参考、4 个 Python 命令脚本与共用模块 `_common.py`，目录与文件内容不改，另附来源仓库根 `LICENSE.md`。它是资源发现技能的内部资料及工具包，不是单独的 Onward 入口。Onward 另外编写接入说明与中文审阅译文；上游数据库参考和脚本保留英文。
+
 ## Onward 自建内容
 
 `onward`、`init-onward`、`tidy-onward`、`multi-session-discuss-onward`、`multi-session-run-plan-onward`、`find-resources-onward` 和 `skills-refine-onward` 是本项目原创技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。网页将这七项单独列入“原创技能”，直接展示完整指令，使用场景单独展示，不与第三方技能比较差异。

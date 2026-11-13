@@ -18,6 +18,8 @@ These areas describe the kinds of help the source groups can provide. Use them a
 
 ## Skills, plugins, and MCP
 
+Use the [skill collections](skill-collections.md) to explore author libraries, specialist collections, workflow suites, and navigation projects by task.
+
 | Source | What to look for |
 |---|---|
 | [skills.sh](https://skills.sh/) | Search skills by task, capability, or author, then follow the result to its upstream repository. |
@@ -25,7 +27,7 @@ These areas describe the kinds of help the source groups can provide. Use them a
 | [Tencent SkillHub / 腾讯 SkillHub](https://skillhub.cn/) | Find skills for Chinese-language and domestic use cases; its [source repository and docs](https://github.com/Tencent/skillhub) offer another entry point. |
 | Plugin Management in the current environment | Search available host plugins by product or capability. The catalog may vary by host and account. |
 | [GitHub Agent Skills topic](https://github.com/topics/agent-skills) | Find independent skills and author collections beyond aggregators; GitHub search can also include task terms and `SKILL.md`. |
-| [OpenAI Skills](https://github.com/openai/skills) and [Matt Pocock's skills](https://github.com/mattpocock/skills) | Explore author collections and follow related authors, references, and projects. |
+| [OpenAI plugins](https://github.com/openai/plugins) and [Matt Pocock's skills](https://github.com/mattpocock/skills) | Explore author collections and follow related authors, references, and projects. The [skill collections](skill-collections.md) include further platform and domain-specific sources. |
 | [MCP Registry](https://registry.modelcontextprotocol.io/) | Look up server registrations, versions, and publishers. Its [API docs](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/api/official-registry-api.md) help when programmatic lookup is useful. |
 | [Glama](https://glama.ai/mcp/servers) and [PulseMCP](https://www.pulsemcp.com/servers) | Find MCP servers by capability, category, or tool description, then follow links to the original publisher. |
 
@@ -91,9 +93,14 @@ Code examples can also be found through the repository sources above. Finished w
 
 ## Academic and professional research
 
+For database selection, citation trails, and original-paper access, use [academic search](academic-search.md).
+
 | Source | What to look for |
 |---|---|
 | [Consensus](https://consensus.app/) | Discover scientific papers with natural-language queries and find cited evidence syntheses. When the Consensus plugin is available, its search can find papers and its research agent can synthesize multi-part questions. |
+| [Google Scholar](https://scholar.google.com/) | Broad scholarly discovery, cited-by links, related articles, and other versions. Use its [search help](https://scholar.google.com/intl/en/scholar/help.html) and an available browser when needed. |
+| [OpenAlex](https://openalex.org/) and [Semantic Scholar](https://www.semanticscholar.org/) | Cross-field paper discovery and citation links; follow records to the publisher or an accessible manuscript. |
+| [Bundled paper-lookup](../resources/.upstream/paper-lookup/SKILL.md) | A complete local package of scholarly lookup instructions, scripts, and database references. Use it through [academic search](academic-search.md) when database queries or original-paper access would help. |
 | [arXiv](https://arxiv.org/search/) | Preprints and research methods; search by title, author, field, and version. |
 | [PubMed](https://pubmed.ncbi.nlm.nih.gov/) | Biomedical literature; filter with subject terms and publication types. |
 | [Crossref](https://www.crossref.org/) | DOI and publication metadata; follow citations to original papers, reports, or books. |
