@@ -33,4 +33,5 @@ Use these roles when a skill would help, not as a required sequence:
 | `to-plan-onward` | Create or update a local ticket-based implementation plan for substantial work. |
 | `multi-session-run-plan-onward` | Coordinate sequential implementation chats for an approved plan, accepting each task before advancing. |
 | `implement-onward` | Implement the specified spec or the current unblocked unfinished ticket of a plan. |
+| `release-onward` | Check and close out a version, publish to the requested channel, and deliver a release report. |
 | `diagnosing-bugs-onward` | Diagnose and fix a hard bug or performance regression. |

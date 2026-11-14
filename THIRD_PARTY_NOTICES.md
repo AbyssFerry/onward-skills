@@ -41,8 +41,10 @@ Onward Skills 包含自建内容和经调整的第三方技能。Onward 新增�
 
 ## Onward 自建内容
 
-`onward`、`init-onward`、`tidy-onward`、`multi-session-discuss-onward`、`multi-session-dispatch-onward`、`multi-session-run-plan-onward`、`find-resources-onward` 和 `skills-refine-onward` 是本项目原创技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。网页将这八项单独列入“原创技能”，直接展示完整指令，使用场景单独展示，不与第三方技能比较差异。
+`onward`、`init-onward`、`tidy-onward`、`multi-session-discuss-onward`、`multi-session-dispatch-onward`、`multi-session-run-plan-onward`、`find-resources-onward`、`skills-refine-onward` 和 `release-onward` 是本项目原创技能，不对应一份被改写的第三方技能原文。项目约定、套件组合、中文说明、网页及上述新增修改采用 Onward 的 MIT 许可。网页将这九项单独列入“原创技能”，直接展示完整指令，使用场景单独展示，不与第三方技能比较差异。
 
 资源发现与技能精炼来源于用户与 AI 的独立设计，迁入时只调整名称与自引用，保留既有方法和三个参考文件。`skills-refine-onward` 仅按名称定位用户安装的 `writing-for-agents` 与 `skill-creator`，不分发这两个外部技能的正文；资源地图中的链接也不代表复制所链接网站的内容。
+
+`release-onward` 由本项目重新撰写，方法参考 Baoyu 的 [release-skills](https://github.com/JimLiu/baoyu-skills/blob/main/.claude/skills/release-skills/SKILL.md)、Superpowers 的[完成验证](https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md)和 Addy Osmani 的[发布清单](https://github.com/addyosmani/agent-skills/blob/main/skills/shipping-and-launch/SKILL.md)，以及本包独立检查的分工方式。没有分发这些参考 Skill 的正文；运行指令与来源说明分开维护。
 
 完整中文原文、使用场景和逐段差异见 [技能说明页](https://abyssferry.github.io/onward-skills/)。所有来源声明均独立于技能指令正文；第三方作者不因此被表示为本项目的维护者或背书方。
