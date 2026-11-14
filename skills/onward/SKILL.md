@@ -27,6 +27,7 @@ Use these roles when a skill would help, not as a required sequence:
 | `research-onward` | Investigate relevant facts, existing solutions, or technical feasibility. |
 | `grilling-onward` | Work through unresolved goals or design decisions in the current scope. |
 | `multi-session-discuss-onward` | Coordinate a substantial design or decision process across separate user-visible topic chats. |
+| `multi-session-dispatch-onward` | Move a specified task to a separate Codex chat that works independently and reports its final outcome. |
 | `to-spec-onward` | Capture agreed decisions in the appropriate specs. |
 | `tidy-onward` | Organize and consolidate project documentation. |
 | `to-plan-onward` | Create or update a local ticket-based implementation plan for substantial work. |

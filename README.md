@@ -4,9 +4,9 @@ Onward，意为「向前」。编程时，我们常在一个问题解决后停�
 
 一套帮助 AI 与用户继续向前的技能：分题讨论、形成规范、安排计划、实施交付，并按需借助研究、诊断、审查与文档整理。
 
-共 **18 个技能：7 个原创技能、11 个改编技能**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 专供 Codex，可独立统筹品牌、产品及其他设计或决策讨论；资源发现与技能精炼入口同样无需项目初始化。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
+共 **19 个技能：8 个原创技能、11 个改编技能**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 和 `multi-session-dispatch-onward` 专供 Codex，可分别统筹分题讨论、交接独立任务；资源发现与技能精炼入口同样无需项目初始化。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
 
-当前版本：[v0.4.1](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.4.1)。
+当前版本：[v0.5.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.5.0)。
 
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
@@ -55,9 +55,11 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 需要逐项展开较大的设计或决策时，可直接使用 `$multi-session-discuss-onward`：当前会话统筹讨论清单与进度，每个专题在独立会话中讨论、看图和确认，再回主会话继续。只在讨论到该专题时开启或继续会话，不提前批量创建或唤醒后续会话。
 
+需要把一个问题、Bug 或已有 spec 的规划交到新会话时，使用 `$multi-session-dispatch-onward`。原会话继续独立工作或结束当前轮次，新会话在指定范围内处理，与用户的过程讨论和修改留在新会话，最终交付后一次性回报；双方不等待或轮询对方。交接包含原会话入口和可核实的用户回报授权。
+
 ## 原创技能
 
-直接提供完整指令，不与第三方技能比较差异。`onward`、`init-onward`、`multi-session-discuss-onward`、`multi-session-run-plan-onward`、`find-resources-onward` 和 `skills-refine-onward` 仅由用户手动调用；`tidy-onward` 也允许 AI 按需选用。
+直接提供完整指令，不与第三方技能比较差异。`onward`、`init-onward`、`multi-session-discuss-onward`、`multi-session-dispatch-onward`、`multi-session-run-plan-onward`、`find-resources-onward` 和 `skills-refine-onward` 仅由用户手动调用；`tidy-onward` 也允许 AI 按需选用。
 
 | 技能 | 用途 |
 |---|---|
@@ -65,13 +67,14 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `init-onward` | 首次接入已有项目时并行探索原始材料，再展示迁移方案与约定草稿，按用户调整确认后执行 |
 | `tidy-onward` | 整理、同步和归档文档，从正确性与一致性两方面审查 |
 | `multi-session-discuss-onward` | 当前会话统筹，在独立 Codex 会话中逐项讨论和确认，维护共用讨论文档 |
+| `multi-session-dispatch-onward` | 将指定任务交给新会话，过程讨论留在新会话，最终交付后一次性回报 |
 | `multi-session-run-plan-onward` | 按计划逐项开启实现会话，完成后主动通知主会话审查并继续 |
 | `find-resources-onward` | 对齐调查方向，发现并比较任务所需的技能、插件、工具、文档、案例与研究资料 |
 | `skills-refine-onward` | 结合三个平等指导来源精炼技能，保留目的、知识与适当判断空间 |
 
 `multi-session-discuss-onward` 的新会话默认使用 GPT-6.1 Sol／xhigh，用户可另选模型和思考程度。专题会话开场先说明本场讨论什么、要确定或产出什么。它没有其他技能依赖，无需项目初始化。
 
-`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。Exa 与 Firecrawl 按覆盖缺口、预期收益和额度或费用选用；技能集合地图按用途提供项目入口。论文发现内嵌完整 paper-lookup 指令、数据库参考与脚本，可按需使用；脚本要求 Python 3.11+，API 示例使用 curl 与网络。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口和 Onward 接入参考提供中文译文，paper-lookup 入口另有完整译文，随包上游数据库参考和脚本保留英文。网页为全部 18 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
+`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。Exa 与 Firecrawl 按覆盖缺口、预期收益和额度或费用选用；技能集合地图按用途提供项目入口。论文发现内嵌完整 paper-lookup 指令、数据库参考与脚本，可按需使用；脚本要求 Python 3.11+，API 示例使用 curl 与网络。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口和 Onward 接入参考提供中文译文，paper-lookup 入口另有完整译文，随包上游数据库参考和脚本保留英文。网页为全部 19 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
 
 ## 核心改编
 
@@ -98,7 +101,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `tdd-onward` | 在适当边界进行测试驱动开发 |
 | `show-me-onward` | 用图解或聚焦网页帮助理解当前话题 |
 
-全套共 11 个仅手动调用、7 个允许 AI 按需选用的技能。上述策略通过各技能的 Codex 配置表达；其他工具是否采用同一策略，以其技能机制为准。
+全套共 12 个仅手动调用、7 个允许 AI 按需选用的技能。上述策略通过各技能的 Codex 配置表达；其他工具是否采用同一策略，以其技能机制为准。
 
 目前安装与分发验收在 Windows + Codex 环境完成。`show-me-onward` 使用当前环境可用的工具打开网页；macOS、Linux 及其他 Agent 尚未进行整套行为验证。
 
