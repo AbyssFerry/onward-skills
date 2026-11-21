@@ -7,7 +7,7 @@ Use the current chat as coordinator. Break the overall work into coherent discus
 
 When the user wants to proceed, open a separate Codex chat for the next topic with the context it needs. Create or resume a topic chat only when the user reaches that topic; do not create or wake later chats in advance. The user discusses, generates images, revises, and confirms the work there.
 
-Default to **GPT-6.1 Sol / xhigh** for new chats. You may ask the user which model and reasoning effort they prefer; reuse their choice for subsequent chats.
+Default to **GPT-6.2 Sol / xhigh** for new chats. You may ask the user which model and reasoning effort they prefer; reuse their choice for subsequent chats.
 
 Tell the new chat to begin its first reply by explaining **what this session is about and what it should settle or produce**, then offer the points it recommends discussing.
 
