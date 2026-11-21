@@ -1,4 +1,4 @@
 interface:
-  display_name: "品牌视觉与宣传创作 · Onward"
+  display_name: "product-brand-kit-onward"
   short_description: "从一个想法出发，创作品牌文字、标志、主视觉与包装，交付宣传物料和图文手册"
   default_prompt: "用 $product-brand-kit-onward 把这个想法做成一套视觉宣传。先和我定短句、标志与画面的方向，再完成各个版位和 PDF。"

@@ -6,7 +6,7 @@ Onward，意为「向前」。编程时，我们常在一个问题解决后停�
 
 共 **21 个技能（10 个原创、11 个改编）**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 和 `multi-session-dispatch-onward` 专供 Codex，可分别统筹分题讨论、交接独立任务；资源发现、技能精炼和品牌视觉创作无需项目初始化。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
 
-当前版本为 [v0.7.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.7.0)。
+当前版本为 [v0.7.1](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.7.1)。
 
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
@@ -148,4 +148,4 @@ Onward 的新增内容采用 [MIT License](LICENSE)。第三方材料保留其�
 
 Matt Pocock 的 [mattpocock/skills](https://github.com/mattpocock/skills) 提供了本套件多数复用方法；`show-me-onward` 基于 [HumanLayer 的 show-me](https://github.com/humanlayer/skills/tree/6ab9013a10c28f5046f7f999549cd5328a0b30d7/plugins/show-me)。逐项来源、采用版本、保留内容及实际修改见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，中文全文对照见 [技能说明页](https://abyssferry.github.io/onward-skills/)。
 
-技能指令本身使用英文，网页提供中文阅读版本。说明中的使用场景是预期行为示例。
+技能调用名、Codex 显示名和技能指令使用英文。网页提供中文阅读版本。说明中的使用场景是预期行为示例。
