@@ -4,9 +4,9 @@ Onward，意为「向前」。编程时，我们常在一个问题解决后停�
 
 一套帮助 AI 与用户继续向前的技能：分题讨论、形成规范、安排计划、实施交付，并按需借助研究、诊断、审查与文档整理。
 
-共 **20 个技能：9 个原创技能、11 个改编技能**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 和 `multi-session-dispatch-onward` 专供 Codex，可分别统筹分题讨论、交接独立任务；资源发现与技能精炼入口同样无需项目初始化。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
+共 **21 个技能（10 个原创、11 个改编）**。工程流程面向采用 Onward 项目约定的仓库；`multi-session-discuss-onward` 和 `multi-session-dispatch-onward` 专供 Codex，可分别统筹分题讨论、交接独立任务；资源发现、技能精炼和品牌视觉创作无需项目初始化。改编技能以 Matt Pocock 的方法为重要基础，尽量保留原文，只调整项目约定、输出位置和技能之间的配合。
 
-当前版本：[v0.6.1](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.6.1)。
+当前版本为 [v0.7.0](https://github.com/AbyssFerry/onward-skills/releases/tag/v0.7.0)。
 
 [中文技能全文、使用场景与逐段对照](https://abyssferry.github.io/onward-skills/) · [来源与修改说明](THIRD_PARTY_NOTICES.md)
 
@@ -59,9 +59,11 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 
 需要发布版本时，手动调用 `$release-onward`，例如「发布 0.3.0 为体验版」。它以项目已有约定为前提，并行检查文档、代码质量和发布就绪情况，再由主智能体统筹修正、相关改动提交、发布与状态核实。目标不清楚或重大问题需要判断时先提问；结束时交付对比上一相关版本的发布报告、检查结果和入口。工具示例按项目适用性选用，发布涉及的平台凭据与命令沿用项目配置。
 
+需要创作品牌文字和视觉时，调用 `$product-brand-kit-onward`，例如「为这个茶礼做一版宣传，先看主句、Logo 和礼盒方向」。方向确定后可交付整套适用物料、独立编辑源和图文 PDF，也可以只做用户点名的一项。[英文指令](skills/product-brand-kit-onward/SKILL.md) · [中文正文与场景](https://abyssferry.github.io/onward-skills/#product-brand-kit-onward)
+
 ## 原创技能
 
-直接提供完整指令，不与第三方技能比较差异。`onward`、`init-onward`、`multi-session-discuss-onward`、`multi-session-dispatch-onward`、`multi-session-run-plan-onward`、`find-resources-onward`、`skills-refine-onward` 和 `release-onward` 仅由用户手动调用；`tidy-onward` 也允许 AI 按需选用。
+直接提供完整指令，不与第三方技能比较差异。`onward`、`init-onward`、`multi-session-discuss-onward`、`multi-session-dispatch-onward`、`multi-session-run-plan-onward`、`find-resources-onward`、`skills-refine-onward` 和 `release-onward` 仅由用户手动调用；`tidy-onward` 和 `product-brand-kit-onward` 也允许 AI 按需选用。
 
 | 技能 | 用途 |
 |---|---|
@@ -74,10 +76,11 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `find-resources-onward` | 对齐调查方向，发现并比较任务所需的技能、插件、工具、文档、案例与研究资料 |
 | `skills-refine-onward` | 结合三个平等指导来源精炼技能，保留目的、知识与适当判断空间 |
 | `release-onward` | 并行检查文档、代码质量与发布就绪情况，完成仓库收尾、指定渠道发布和版本报告 |
+| `product-brand-kit-onward` | 将想法或既有资产变成统一的品牌文字、标志和视觉，制作宣传及包装物料并交付编辑源和 PDF |
 
 `multi-session-discuss-onward` 的新会话默认使用 GPT-6.2 Sol／xhigh，用户可另选模型和思考程度。专题会话开场先说明本场讨论什么、要确定或产出什么。它没有其他技能依赖，无需项目初始化。
 
-`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。Exa 与 Firecrawl 按覆盖缺口、预期收益和额度或费用选用；技能集合地图按用途提供项目入口。论文发现内嵌完整 paper-lookup 指令、数据库参考与脚本，可按需使用；脚本要求 Python 3.11+，API 示例使用 curl 与网络。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口和 Onward 接入参考提供中文译文，paper-lookup 入口另有完整译文，随包上游数据库参考和脚本保留英文。网页为全部 20 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
+`find-resources-onward` 先与用户对齐调查方向，再按需要并行调查并整合发现；交付资源选择，安装或执行留待后续请求。Exa 与 Firecrawl 按覆盖缺口、预期收益和额度或费用选用；技能集合地图按用途提供项目入口。论文发现内嵌完整 paper-lookup 指令、数据库参考与脚本，可按需使用；脚本要求 Python 3.11+，API 示例使用 curl 与网络。`skills-refine-onward` 自带 Purpose and Judgment，另从用户已安装的技能中读取 `writing-for-agents` 与 `skill-creator`；它们不随本包分发，缺少时明确提醒。两个入口和 Onward 接入参考提供中文译文，paper-lookup 入口另有完整译文，随包上游数据库参考和脚本保留英文。说明页为全部 21 个技能提供独立的使用场景，说明预期用途与结果；场景与指令正文分开展示，不进入安装后的技能文件。
 
 ## 核心改编
 
@@ -104,7 +107,7 @@ $implement-onward 实施计划中当前依赖已满足的一个任务。
 | `tdd-onward` | 在适当边界进行测试驱动开发 |
 | `show-me-onward` | 用图解或聚焦网页帮助理解当前话题 |
 
-全套共 13 个仅手动调用、7 个允许 AI 按需选用的技能。上述策略通过各技能的 Codex 配置表达；其他工具是否采用同一策略，以其技能机制为准。
+全套共 13 个仅手动调用、8 个允许 AI 按需选用的技能。上述策略通过各技能的 Codex 配置表达；其他工具是否采用同一策略，以其技能机制为准。
 
 目前安装与分发验收在 Windows + Codex 环境完成。`show-me-onward` 使用当前环境可用的工具打开网页；macOS、Linux 及其他 Agent 尚未进行整套行为验证。
 
