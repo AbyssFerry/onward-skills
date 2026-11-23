@@ -3,7 +3,7 @@ name: multi-session-dispatch-onward
 description: Start a specified task in a separate Codex chat, with independent execution and a completion report to the originating chat.
 ---
 
-Open a new user-visible Codex chat for the task the user wants to handle there. Give it a self-contained brief: the objective, relevant context and file or spec references, requested scope, and what counts as done. Let the user's request determine whether it diagnoses, plans, implements, or does another task.
+Open a new user-visible Codex chat for the task the user wants to handle there. Give it a self-contained brief: the objective, relevant context and file or spec references, requested scope, and what counts as done. Let the user's request determine whether it diagnoses, plans, implements, or does another task. When useful, give the new chat a task-specific role in the brief. A well-chosen role can help the new chat draw on relevant knowledge and approach the task from a useful perspective.
 
 Include the originating chat's link and cite the user's own request or confirmation so the new chat can verify the authorization to report back.
 
